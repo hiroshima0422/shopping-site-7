@@ -51,30 +51,39 @@
           <ul class="sp_navi_li">
             <li class=""><a href=".html"><img class="li_img" src="images/top_sp/fb.png" alt="facebook" srcset="images/top_sp/fb@2x.png 2x" /></a></li>
             <li class=""><a href=".html"><img class="li_img" src="images/top_sp/insta.png" alt="insta" srcset="images/top_sp/insta@2x.png 2x" /></a></li>
-            <li class=""><div><img class="li_img" src="images/top_sp/menu_icon.png" alt="ショッピングガイド" srcset="images/top_sp/menu_icon@2x.png 2x"/></div></li>
+            <li class=""><img id="menu" class="li_img" src="images/top_sp/menu_icon.png" alt="ショッピングガイド" srcset="images/top_sp/menu_icon@2x.png 2x"/></li>
             
+
+               
           </ul>
+          
         </div>
         <!-- sp_navi -->
 
         <div class="pc_navi">
           <ul class="pc_navi_ul">
-            <li class="pc_navi_li"><a href=".html"><img class="" src="images/top/menu_login.png" alt="ログイン" /></a></li>
-            <li class="pc_navi_li"><a href=".html"><img class="" src="images/top/menu_cart.png" alt="カート" /></a></li>
-            <li class="pc_navi_li"><a href=".html"><img class="" src="images/top/menu_mypage.png" alt="マイページ" /></a></li>
-            <li class="pc_navi_li"><a href=".html"><img class="" src="images/top/menu_guide.png" alt="ショッピングガイド" /></a></li>
-            <li class="pc_navi_li_facebook"><a href=".html"><img class="" src="images/top/facebook.png" alt="facebook" /></a></li>
             <li class="pc_navi_li_facebook"><a href=".html"><img class="" src="images/top/insta.png" alt="insta" /></a></li>
+            <li class="pc_navi_li_facebook"><a href=".html"><img class="" src="images/top/facebook.png" alt="facebook" /></a></li>
+            <li class="pc_navi_li"><a href=".html"><img class="" src="images/top/menu_guide.png" alt="ショッピングガイド" /></a></li>
+            <li class="pc_navi_li"><a href=".html"><img class="" src="images/top/menu_mypage.png" alt="マイページ" /></a></li>
+            <li class="pc_navi_li"><a href=".html"><img class="" src="images/top/menu_cart.png" alt="カート" /></a></li>
+            <li class="pc_navi_li"><a href=".html"><img class="" src="images/top/menu_login.png" alt="ログイン" /></a></li>
           </ul>
         </div>
         <!-- pc_navi -->
       </div>
+       
     </div>
     <!-- row -->
   </div>
   <!-- header_in -->
 </header>
-
+              <ul class="sp_menu_toggle">
+                <li class="sp_menu_toggle-li"><a href="">ログイン</a></li>
+                <li><a href="">カート</a></li>
+                <li><a href="">マイページ</a></li>
+                <li><a href="">ショッピングガイド</a></li>
+              </ul>
 
 
 
@@ -402,14 +411,7 @@
     
 </footer>
 <!-- //footer -->  
- <div id="menu">ここをクリック</div>
-
-              <ul class="sp_menu_toggle">
-                <li><a href="">ログイン</a></li>
-                <li><a href="">カート</a></li>
-                <li><a href="">マイページ</a></li>
-                <li><a href="">ショッピングガイド</a></li>
-              </ul>           
+          
             
 
         
@@ -419,8 +421,7 @@
       
   </div>
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script>
+<script>
           $(document).ready(function(){
         $("#menu").click(function(){
           $(".sp_menu_toggle").slideToggle();
